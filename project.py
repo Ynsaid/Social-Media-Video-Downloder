@@ -178,8 +178,7 @@ class DownloadWorker(QThread):
 
 
             ydl_options = {
-                "format": "bv*+ba/b",
-                "merge_output_format": "mp4",
+                "format": "b",
                 "outtmpl": outtmpl,
                 "progress_hooks": [self.progress_hook],
                 "overwrites": True,
