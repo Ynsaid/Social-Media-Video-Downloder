@@ -1,7 +1,6 @@
 import sys
 import os
 import re
-import shutil
 from pathlib import Path
 
 
@@ -256,22 +255,6 @@ class DownloadWorker(QThread):
 
 
 
-def find_ffmpeg():
-  
-    app_dir = Path(
-        getattr(sys, "_MEIPASS", Path(__file__).resolve().parent)
-    )
-
-
-    local_ffmpeg = app_dir / "bin" / "ffmpeg.exe"
-
-
-    if local_ffmpeg.exists():
-        return str(local_ffmpeg)
-
-
-    return shutil.which("ffmpeg")
-
 
 
 class VideoGrab(QWidget):
@@ -282,7 +265,7 @@ class VideoGrab(QWidget):
 
         self.worker = None
         self.download_dir = DEFAULT_DOWNLOAD_DIR
-        self.ffmpeg_path = find_ffmpeg()
+        
 
         self.setWindowTitle(APP_NAME)
 
