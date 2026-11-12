@@ -17,9 +17,11 @@ A lightweight desktop application for downloading videos from social media platf
 > Platform availability depends on yt-dlp support and the accessibility of each video. Private, restricted, or login-required content may not be available.
 
 ## Screenshots
-<img width="566" height="778" alt="image" src="https://github.com/user-attachments/assets/6835d283-a577-442e-8fc3-ff1bed0d5786" />
-<img width="565" height="777" alt="image" src="https://github.com/user-attachments/assets/643d7a9b-48a0-4397-a26a-d26a8379d665" />
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/6835d283-a577-442e-8fc3-ff1bed0d5786" alt="VideoGrab main interface" width="45%" />
+  <img src="https://github.com/user-attachments/assets/643d7a9b-48a0-4397-a26a-d26a8379d665" alt="VideoGrab download progress" width="45%" />
+</p>
 
 ## Technology Stack
 
